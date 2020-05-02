@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+</head>
+<body bgcolor="#666666">
+
+    <div id="ap1">{{ bab }}</div> <hr>
+    <div id="ap2"><span  v-bind:title="msg"> 일단 한번 올려봐</span> </div> <hr>
+    <div id="ap4">
+        <ol>
+            <li v-for="ck in danto">{{ ck.lst }}</li>
+        </ol>
+    </div> <hr>
+    <div id="ap5"><p>{{ msg }}</p>
+        <button v-on:click="rev1">디비1</button>
+    </div> <hr>
+    <div id="ap6">
+        <p>{{ txt }}</p>
+        <input v-model="txt">
+    </div>
+       
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="tes.js"></script>
+</body>
+</html>
